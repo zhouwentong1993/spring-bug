@@ -31,14 +31,13 @@ public class MybatisConfig {
 
     @Bean
     public DataSource dataSource() {
-        // 数据源的配置，这里使用 HikariCP 作为连接池
         // 根据实际的数据库配置进行调整
         DruidDataSource config = new DruidDataSource();
         config.setUrl("jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC");
         config.setTestOnBorrow(true);
         config.setTestOnReturn(true);
         config.setUsername("root");
-        config.setPassword("root");
+        config.setPassword("12345678");
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return config;
     }
