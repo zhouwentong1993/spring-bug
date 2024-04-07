@@ -37,7 +37,7 @@ public class MybatisConfig {
         config.setTestOnBorrow(true);
         config.setTestOnReturn(true);
         config.setUsername("root");
-        config.setPassword("12345678");
+        config.setPassword("root");
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return config;
     }
